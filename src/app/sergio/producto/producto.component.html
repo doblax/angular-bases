@@ -1,0 +1,14 @@
+
+<h1>listado productos</h1>
+
+<button (click)="misProductos()">Mi boton</button>
+
+<ul>
+  <li *ngFor="let producto of Productos">
+    <p>
+      ID: {{producto.id}} <br>
+      Title: {{producto.title}}<br>
+      <img *ngFor="let img of producto.images" src="{{img}} ">
+    </p>
+  </li>
+</ul>
